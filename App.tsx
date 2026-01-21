@@ -6,7 +6,6 @@ import {
   CheckCircle2, 
   Circle, 
   Send, 
-  Download, 
   FileJson, 
   Menu,
   X,
@@ -17,21 +16,14 @@ import {
   Image as ImageIcon,
   MessageCircle,
   BarChart3,
-  Facebook,
-  Linkedin,
-  Instagram,
   Globe,
-  Phone,
-  Mail,
   TrendingUp,
   Award,
   Check,
   Zap,
   Crown,
   Star,
-  Edit,
   LogOut,
-  Settings,
   AlertTriangle
 } from 'lucide-react';
 import { 
@@ -41,8 +33,7 @@ import {
   YAxis, 
   CartesianGrid, 
   Tooltip, 
-  ResponsiveContainer,
-  Cell
+  ResponsiveContainer
 } from 'recharts';
 import html2canvas from 'html2canvas';
 import { jsPDF } from 'jspdf';
@@ -55,13 +46,12 @@ import {
   Table, 
   TableRow, 
   TableCell, 
-  BorderStyle, 
   WidthType, 
   ImageRun, 
-  AlignmentType,
-  VerticalAlign,
-  Header
+  AlignmentType
 } from 'docx';
+
+// Services
 import { loadData, saveData, clearData } from './services/storageService';
 import { generateMonthlyObservation } from './services/geminiService';
 import { MonthData, WeeklyData, ViewState, DashboardStats, PlanType, PlanConfig } from './types';
